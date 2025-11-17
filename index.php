@@ -498,7 +498,8 @@
 
             <hr class="hr_liner">
 
-            <a class="link" style="color: white;" href="./VISTA/DESCARGAS/DEMO_PUNTO.rar"
+            <a class="link" style="color: white;"
+               href="https://drive.google.com/file/d/1fNdrMG11Q2FxgEOqnzeavUZsUMAl0Ib-/view?usp=sharing"
                download="DEMO_PUNTO.rar">Descargar demo (Nota: Los
                colores de la aplicación e iconos de la versión demo son diferentes a las imágenes mostradas)<i
                   class="fa-solid fa-download" style="margin-inline: 5px;"></i></a>

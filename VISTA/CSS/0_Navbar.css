@@ -1,0 +1,421 @@
+:root
+{
+    --tone1: #ffd7d7;
+    --tone2: #BE503C;
+    --tone3: #7e5a5a;
+    --tone4: #cf8585;
+    --tone5: #4a0000;
+    --tone6: #7e3b3b;
+    --tone7: #b10000;
+    --gray1: rgb(118, 118, 118);
+}
+
+*
+{
+    font-family: "Benton Sans", sans-serif;
+}
+
+header
+{
+    width: 100%;
+    height: 80px;
+    background: var(--tone2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    position: fixed;
+    z-index: 5000;
+}
+
+nav{
+    padding: 5px, 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    color: #ffd7d7;
+}
+
+nav a:hover{
+    color: black;
+}
+
+
+
+.logo a{
+   display: flex;
+   align-items: center;
+   font-size: 20px;
+}
+
+.active, ul li .active 
+{
+	background-color: var(--tone6);
+	color: var(--tone1);
+}
+
+.logo
+{
+    position: relative;
+    bottom: 5px;
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--tone1);
+    padding: 20px, 20px;
+    margin: 20px;
+}
+
+.logo h6
+{
+    font-size: 10px;
+    position: absolute;
+    left: 65px;
+    top: 40px;
+}
+
+.logo img
+{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.navbar ul
+{
+    position: relative;
+    top: 5px;
+    display: flex;
+}
+
+.logo {
+    flex: 1;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+/*.menu li{
+    padding: 15px 10px;
+    font-size: 16px;
+}*/
+
+.toggler{
+    font-size: 30px;
+    display: none;
+}
+
+a, a:hover{ 
+    text-decoration: none; 
+}
+
+.navbar ul li a 
+{
+    display: block;
+    color: var(--tone1);
+    font-size:  20px; 
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover
+{
+    color: var(--tone2);
+    background: var(--tone1);
+    text-decoration: none;
+}
+
+.fa-search
+{
+    font-size: 20px;
+    color: var(--tone1);
+    margin-right: 10px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.fa-search:hover
+{
+    color: var(--tone3);
+    transition: 0.2s;
+}
+
+#search
+{
+    font-size:  20px; 
+    margin-top: 10px;
+    border-radius: 18px;
+    background: var(--tone1);
+    padding: 20px; 
+    width: 300px;
+    height: 15px;    
+}
+
+#search::placeholder 
+{
+    color: var(--tone3);
+}
+
+.navbar select
+{
+    display: block;
+    color: var(--tone1);
+    background-color: var(--tone2);
+    border-color: var(--tone2);
+    font-size:  20px; 
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    margin-top: 7px;
+    text-decoration: none;
+    outline: none;
+}
+
+.navbar select:hover
+{
+    color: var(--tone2);
+    background: var(--tone1);
+}
+
+.navbar select:focus
+{
+    color: var(--tone2);
+    background: var(--tone1);
+}
+
+.navbar select option:checked
+{
+    color: var(--tone3);
+}
+
+.navspace
+{
+  padding-top: 100px;
+}
+
+input
+{
+    font-size: 1rem;
+}
+
+.userPic
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    color: var(--tone1);
+    margin-top: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.sidebar 
+{
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	background-color: var(--tone2);
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+    z-index: 4999;
+}
+
+.sidebar i
+{
+    font-size: 24px;
+	padding-left: 10px;
+}
+
+.sidebar p
+{
+	padding-left: 30px;
+}
+  
+.sidebar a 
+{
+	display: block;
+	color: var(--tone1);
+	padding: 30px;
+	text-decoration: none;
+}
+  
+.sidebar a.active 
+{
+	background-color: var(--tone6);
+	color: var(--tone1);
+}
+  
+.sidebar a:hover:not(.active) 
+{
+	background-color: var(--tone6);
+	color: var(--tone1);
+}
+  
+div.content 
+{
+	margin-left: 200px;
+	padding: 1px 16px;
+	height: 750px;
+}
+
+@media (max-width: 960px) 
+{
+    html, body 
+    {
+        width: 100% !important;
+        overflow-x: hidden;
+    }
+    
+    header
+    {
+        width: 100%;
+        height: 80px;
+    }
+    
+    .logo
+    {
+        font-size: 0px;
+    }
+    
+    .logo h6
+    {
+        font-size: 0px;
+    }
+    
+    .logo img
+    {
+        position: relative;
+        right: 25px;
+        top: 5px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    #iconSearch
+    {
+        position: absolute;
+        left: -88px;
+        font-size: 15px;
+    }
+
+    .fa-search
+    {
+        position: absolute;
+        left: -120px;
+        font-size: 15px;
+    }
+
+    #search
+    {
+        position: absolute;
+        right: 215px;
+        width: 100px;   
+        font-size: 12px;
+    }
+    
+    .navbar ul
+    {
+        position: relative;
+        left: 50px;
+    }
+    
+    .navbar ul li a 
+    {
+        display: none;
+    }
+    
+    .navbar select
+    {
+        position: relative;
+        right: 0px;
+        width: 150px;
+        font-size: 10px; 
+        padding: 10px 25px;
+        transition: 0.2s;
+        margin: 0 5px;
+        margin-top: 13px;
+    }
+
+    .navspace
+    {
+      padding-top: 100px;
+    }
+    
+    input
+    {
+        font-size: 1rem;
+    }
+    
+    .userPic
+    {
+        width: 45px;
+        height: 45px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    .sidebar 
+    {
+        margin: 0;
+        padding: 0;
+        width: 50px;
+        height: 100%;
+    }
+    
+    .sidebar i
+    {
+        display: none;
+    }
+    
+    .sidebar p
+    {
+        display: none;
+    }
+      
+    .sidebar a 
+    {
+        position: relative;
+        right: 12px;
+        width: 100px;
+    }
+
+    div.content 
+    {
+        margin-left: 200px;
+        padding: 1px 16px;
+        height: 750px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav{
+        display: block;
+        position:relative;
+        padding: 15px, 20px;
+    }
+
+    .menu{
+        margin-top: 15px;
+        display:  none;
+    }
+
+    .menu.active, .toggler{
+        display: block;
+    }
+
+    .toggler{
+        top: 15px;
+        right: 20px;
+    }
+}

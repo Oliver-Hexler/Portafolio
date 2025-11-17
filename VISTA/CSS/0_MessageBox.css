@@ -1,0 +1,161 @@
+:root
+{
+    --tone1: #ffd7d7;
+    --tone2: #230505;
+    --tone3: #7e5a5a;
+    --tone4: #cf8585;
+    --tone5: #4a0000;
+    --tone6: #7e3b3b;
+    --tone7: #b10000;
+    --gray1: rgb(118, 118, 118);
+}
+
+*
+{
+    font-family: "Benton Sans", sans-serif;
+}
+
+.messageMb, .yesNoMb, .alertMb
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(35, 5, 5, 0.8);
+    z-index: 9999;
+}
+
+#mbEdit
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(35, 5, 5, 0.8);
+    z-index: 9990;
+}
+
+.msgtxt
+{
+    margin-left: 100px;
+    margin-top: 50px;
+    color: var(--ton2);
+    font-size: 25px;
+}
+
+#btn
+{
+    color: var(--tone1);
+    background: var(--tone2);
+    font-size: 25px;
+    width: 200px;
+}
+
+#btn:hover
+{
+    color: var(--tone7);
+}
+
+.close 
+{
+    margin: 40px;
+    cursor: pointer;
+}
+
+.mbMessage
+{
+    border-radius: 25px;
+    position: absolute;
+    width: 50%;
+    height: 200px;
+    top: 25%;
+    left: 25%;
+    text-align: center;
+    background: var(--tone1);
+}
+
+.mbYesNo
+{
+    border-radius: 25px;
+    position: absolute;
+    width: 50%;
+    height: 35%;
+    top: 25%;
+    left: 25%;
+    text-align: center;
+    background: var(--tone1);
+}
+
+.mbYesNo h2, .mbYesNo p
+{
+    padding-left: 50px;
+}
+
+.mbYesNo .close 
+{
+    margin: 60px;
+    cursor: pointer;
+}
+
+@media (max-width: 960px) 
+{
+    html, body 
+    {
+        width: 100% !important;
+        overflow-x: hidden;
+    }
+    
+    .mbMessage
+    {
+        height: 300px;
+    }
+
+    .mbYesNo
+    {
+        width: 250px;
+        height: 200px;
+    }
+
+    .mbMessage .close
+    {
+        position: relative;
+        right: 50px;
+        font-size: 36px;
+    }
+
+    .msgtxt
+    {
+        position: relative;
+        right: 50px;
+        font-size: 18px;
+    }
+
+    .mbYesNo .msgtxt
+    {
+        position: relative;
+        width: 150px;
+        right: 75px;
+        bottom: 10px;
+        font-size: 10px;
+    }
+    
+    .mbYesNo .close
+    {
+        display: none;
+    }
+
+    .mbYesNo .msgtxt h2
+    {
+        font-size: 18px;
+    }
+
+    #btn
+    {
+        position: relative;
+        bottom: 10px;
+        font-size: 12px;
+        width: 100px;
+    }
+}

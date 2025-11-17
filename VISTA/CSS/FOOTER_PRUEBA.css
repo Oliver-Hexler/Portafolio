@@ -1,0 +1,154 @@
+
+h4, ul, p
+{
+    font-family: 'Droid Sans', arial, sans-serif !important;
+    margin:0;padding:0;
+}
+
+[data-title]:hover:after
+{
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+}
+
+[data-title]:after 
+{
+    content: attr(data-title);
+    background-color:  #cbcbcb;
+    color: #ffffff;
+    font-size: 14px;
+    position: absolute;
+    padding: 3px 20px;
+    bottom: -1.6em;
+    left: 100%;
+    white-space: nowrap;
+    box-shadow: 1px 1px 3px  #cbcbcb;
+    opacity: 0;
+    border: 1px solid  #cbcbcb;
+    z-index: 99999;
+    visibility: hidden;
+    border-radius: 6px;
+}
+
+[data-title]
+{
+    position: relative;
+}
+
+.footer 
+{
+    padding: 10px;
+    background-color: #000;
+    color: #ffffff;
+    border-top-width: 3px !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+  
+.footer ul 
+{
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+  
+.footer li 
+{
+    padding: 0 10px;
+}
+  
+.footer ul a 
+{
+    color: deepskyblue;
+    text-decoration:none;
+    opacity: 0.8;
+}
+
+.footer_texto_font_awesome{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+  
+.footer ul a:hover 
+{
+    opacity: 1;
+}
+  
+.footer .redessociales 
+{
+    padding-bottom: 25px;
+}
+  
+.footer .redessociales > a 
+{
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    /*border-radius: 50%;
+    border: 1px solid #ffffff;*/
+    margin: 0 8px;
+    color: deepskyblue;
+    opacity: 0.75;
+}
+  
+.footer .redessociales > a:hover 
+{
+    opacity: 0.9;
+}
+  
+.footer .derechos 
+{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+@media (max-width: 960px) 
+{
+    html, body 
+    {
+        width: 100% !important;
+        overflow-x: hidden;
+    }
+    
+    [data-title]:after 
+    {
+        font-size: 7px;
+        left: -50px;
+    }
+
+    .sidebar [data-title]:after 
+    {
+        font-size: 5px;
+        left: 5px;
+        display: block;
+    }
+
+    .footer ul 
+    {
+        font-size: 12px;
+    }
+      
+    .footer .redessociales > a 
+    {
+        font-size: 18px;
+    }
+    .footer .derechos 
+    {
+        font-size: 9px;
+    }
+}
